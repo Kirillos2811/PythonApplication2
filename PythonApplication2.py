@@ -1,1 +1,9 @@
-
+print("Введите этапы развития человека:")
+stage1 = input()
+stage2 = input()
+stage3 = input()
+stage4 = input()
+stage5 = input()
+print("Вы ввели этапы развития в порядке эволюции:")
+print(stage1, stage2, stage3, stage4, stage5)
+print("Правильный ответ: Drylopithecus, Australopithecus, Homo erectus, Homo sapiens, Homo sapiens sapiens")
