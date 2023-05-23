@@ -1,8 +1,9 @@
-x = int(input("x = "))
+string = list(input())
+res_string = ""
+previous_char = ""
+for i in reversed(range(len(string))):
+    if string[i] == " " and previous_char == " ":
+        string.pop(i)
+    previous_char = string[i]
 
-count = 0
-for i in range(1, x + 1):
-    if x % i == 0:
-        count += 1
-
-print("count =", count)
+print("".join(string))
