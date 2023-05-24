@@ -1,9 +1,6 @@
-string = list(input())
-res_string = ""
-previous_char = ""
-for i in reversed(range(len(string))):
-    if string[i] == " " and previous_char == " ":
-        string.pop(i)
-    previous_char = string[i]
+n = int(input())
+arr = list(map(int, input().split(" ")))
 
-print("".join(string))
+last_element = arr.pop()
+arr.insert(0, last_element)
+print(*arr)
