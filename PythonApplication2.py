@@ -1,6 +1,9 @@
-n = int(input())
-arr = list(map(int, input().split(" ")))
+set1 = set(input().split(" "))
+set2 = set(input().split(" "))
 
-last_element = arr.pop()
-arr.insert(0, last_element)
-print(*arr)
+count = 0
+for el in set1:
+    if el in set2:
+        count += 1
+
+print(count)
