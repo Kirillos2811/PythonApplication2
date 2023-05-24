@@ -1,9 +1,8 @@
-set1 = set(input().split(" "))
-set2 = set(input().split(" "))
+left_border = int(input("left border = "))
+right_border = int(input("right border = "))
 
-count = 0
-for el in set1:
-    if el in set2:
-        count += 1
+res = {}
+for i in range(left_border, right_border + 1):
+    res[i] = i**i
 
-print(count)
+print(res)
